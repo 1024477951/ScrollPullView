@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+
+        <ImageView
+            android:id="@+id/brief_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"
+
+            />
+
+        <View
+            android:id="@+id/action_red_point"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignTop="@+id/brief_iv"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginTop="-4dp"
+            android:layout_toRightOf="@+id/brief_iv"
+            android:background="#1e1e1e"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/big_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/brief_iv"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/brief_iv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingRight="30dp"
+            android:text="毕业二十年,第三方第三方的所发生的fdgdfgdfg"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/sub_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/big_title_tv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/brief_iv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingRight="30dp"
+            android:text="成功的职业和成功的投资,第三方第三方士大夫水电费水电费dfgdfg"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+
+        <LinearLayout
+            android:id="@+id/tag_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/brief_iv"
+            android:layout_alignBottom="@+id/brief_iv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tag_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="必读"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
